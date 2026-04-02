@@ -46,7 +46,7 @@ export default function Navbar() {
 
       {/* Right side */}
       <div className="flex items-center gap-6">
-        {["projects", "about", "contact"].map((section) => (
+        {["projects", "about", "contact", "skills"].map((section) => (
           <button
             key={section}
             onClick={() => scrollTo(section)}
