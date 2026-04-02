@@ -55,7 +55,7 @@ export default function About() {
         <div>
           <p className="text-zinc-400 leading-relaxed text-lg mb-6">
             I'm a high school student at{" "}
-            <span className="text-white font-medium">
+            <span className="dark:text-white text-zinc-900">
               Vincent Massey Secondary School
             </span>{" "}
             in Windsor, ON, enrolled in the Enriched Program. I build things
@@ -64,7 +64,7 @@ export default function About() {
           </p>
           <p className="text-zinc-400 leading-relaxed text-lg mb-10">
             I'm passionate about{" "}
-            <span className="text-white font-medium">
+            <span className="dark:text-white text-zinc-900">
               computer vision and AI
             </span>{" "}
             — specifically building tools that can see and understand the
@@ -111,7 +111,9 @@ export default function About() {
                     {item.icon}
                   </div>
                   <div>
-                    <p className="text-white font-medium">{item.label}</p>
+                    <p className="dark:text-white text-zinc-900">
+                      {item.label}
+                    </p>
                     <p className="text-zinc-500 text-sm">{item.description}</p>
                   </div>
                   {item.link && (
