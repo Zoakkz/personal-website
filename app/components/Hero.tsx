@@ -2,7 +2,10 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="grid-bg relative min-h-screen flex flex-col justify-center px-12 max-w-5xl mx-auto overflow-hidden">
+    <section
+      id="hero"
+      className="grid-bg relative min-h-screen flex flex-col justify-center px-12 max-w-5xl mx-auto overflow-hidden"
+    >
       {/* Glow blobs */}
       <div
         className="absolute top-1/3 left-1/4 w-96 h-96 rounded-full blur-3xl"
@@ -74,7 +77,7 @@ export default function Hero() {
             <FaEnvelope size={22} />
           </a>
           <a
-            href="/resume.pdf"
+            href="/Academic Resume.pdf"
             target="_blank"
             className="p-3 rounded-xl border border-zinc-700 text-zinc-400 hover:text-green-400 hover:border-green-400 transition-all duration-200 hover:scale-110"
             style={{ backgroundColor: "rgba(255,255,255,0.03)" }}

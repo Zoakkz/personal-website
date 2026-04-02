@@ -10,7 +10,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="px-8 max-w-4xl mx-auto py-24">
+    <section id="projects" className="px-8 max-w-4xl mx-auto py-24">
       <h2 className="text-3xl font-bold mb-12">Projects</h2>
       <div className="flex flex-col gap-8">
         {projects.map((project) => (
