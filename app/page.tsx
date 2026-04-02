@@ -10,9 +10,8 @@ export default function Home() {
     <main>
       <ThemeToggle />
       <Hero />
-      <Projects />
-      <Skills />
       <About />
+      <Projects />
       <Contact />
     </main>
   );
