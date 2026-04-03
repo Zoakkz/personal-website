@@ -5,38 +5,38 @@ const interests = [
   {
     icon: <GiShuttlecock size={24} />,
     label: "Badminton",
-    description: "SWOSSAA Champion 3× · OFSAA Semifinalist · Team MVP",
+    description: " ",
     color: "#f59e0b",
     link: "/badminton",
   },
   {
     icon: <GiGamepad size={24} />,
     label: "Minecraft",
-    description: "Been playing since forever. Creative mode enjoyer.",
+    description: " ",
     color: "#22c55e",
     link: "/minecraft",
   },
   {
     icon: <SiSpotify size={24} />,
     label: "Spotify",
-    description: "Check out what I'm listening to.",
+    description: "",
     color: "#1db954",
     link: "https://open.spotify.com/user/31yppntlad2hzgch7c7uykr5l3tq",
   },
   {
     icon: <SiDevpost size={24} />,
     label: "Hackathons",
-    description: "Best Use of Generative AI @ MasseyHacks · Top 3 @ SHAD",
+    description: "",
     color: "#003e54",
     link: "https://devpost.com/zachbai2008",
   },
 ];
 
 const highlights = [
-  "Honour Roll with Distinction 3×",
-  "FRC World Championship Qualifier",
   "SHAD Canada Alumni",
-  "Top 5 SSPC Competition",
+  "FRC World Championship Qualifier",
+  "Honour Roll with Distinction 4×",
+  "SWOSSAA Champion 3× · OFSAA Semifinalist",
 ];
 
 export default function About() {
@@ -58,18 +58,17 @@ export default function About() {
             <span className="dark:text-white text-zinc-900">
               Vincent Massey Secondary School
             </span>{" "}
-            in Windsor, ON, enrolled in the Enriched Program. I build things
-            with code, compete in badminton, and spend way too much time on side
-            projects.
+            in Windsor, ON. I enjoy building things with code, competing in
+            badminton, and spending way too much time building in Minecraft.
           </p>
           <p className="text-zinc-400 leading-relaxed text-lg mb-10">
-            I'm passionate about{" "}
+            Lately, I’ve been getting into{" "}
             <span className="dark:text-white text-zinc-900">
               computer vision and AI
             </span>{" "}
-            — specifically building tools that can see and understand the
-            physical world. Currently looking for opportunities to keep learning
-            and building.
+            , especially building things that interact with the real world
+            instead of just living on a screen. I’m always looking for new
+            things to learn and build.
           </p>
 
           {/* Achievements */}

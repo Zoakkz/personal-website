@@ -18,16 +18,13 @@ export default function Home() {
         <Navbar />
         <Hero />
         <FadeIn>
+          <About />
+        </FadeIn>
+        <FadeIn delay={0.1}>
           <Projects />
         </FadeIn>
         <FadeIn delay={0.1}>
           <Skills />
-        </FadeIn>
-        <FadeIn delay={0.1}>
-          <About />
-        </FadeIn>
-        <FadeIn delay={0.1}>
-          <Contact />
         </FadeIn>
         <FadeIn delay={0.1}>
           <Footer />

@@ -2,14 +2,7 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import {
-  SiPython,
-  SiTypescript,
-  SiJavascript,
-  SiOpenjdk,
-  SiCplusplus,
-  SiHtml5,
-} from "react-icons/si";
+import { SiPython, SiOpenjdk, SiCplusplus } from "react-icons/si";
 import { FiBox } from "react-icons/fi";
 
 const skills = [
@@ -23,22 +16,13 @@ const skills = [
     level: 90,
   },
   {
-    name: "TypeScript",
-    icon: SiTypescript,
-    color: "#6366f1",
-    bg: "rgba(99,102,241,0.1)",
-    border: "rgba(99,102,241,0.25)",
-    desc: "Next.js, React, type-safe frontends",
-    level: 75,
-  },
-  {
-    name: "JavaScript",
-    icon: SiJavascript,
-    color: "#eab308",
-    bg: "rgba(234,179,8,0.1)",
-    border: "rgba(234,179,8,0.25)",
-    desc: "DOM, async, browser tooling",
-    level: 78,
+    name: "C++",
+    icon: SiCplusplus,
+    color: "#8b5cf6",
+    bg: "rgba(139,92,246,0.1)",
+    border: "rgba(139,92,246,0.25)",
+    desc: "Systems, competitive programming",
+    level: 55,
   },
   {
     name: "Java",
@@ -50,30 +34,12 @@ const skills = [
     level: 65,
   },
   {
-    name: "C++",
-    icon: SiCplusplus,
-    color: "#8b5cf6",
-    bg: "rgba(139,92,246,0.1)",
-    border: "rgba(139,92,246,0.25)",
-    desc: "Systems, competitive programming",
-    level: 55,
-  },
-  {
-    name: "HTML / CSS",
-    icon: SiHtml5,
-    color: "#ec4899",
-    bg: "rgba(236,72,153,0.1)",
-    border: "rgba(236,72,153,0.25)",
-    desc: "Semantic markup, animations, layout",
-    level: 88,
-  },
-  {
-    name: "CAD",
+    name: "AutoCAD",
     icon: FiBox,
     color: "#14b8a6",
     bg: "rgba(20,184,166,0.1)",
     border: "rgba(20,184,166,0.25)",
-    desc: "Onshape — FRC mechanisms & parts",
+    desc: "FRC mechanisms & part design",
     level: 60,
   },
 ];
@@ -211,11 +177,9 @@ export default function Skills() {
         animate={inView ? { opacity: 1 } : {}}
         transition={{ duration: 0.5, delay: 0.15 }}
         className="text-zinc-500 text-sm font-mono mb-10"
-      >
-        <span className="text-indigo-400">~/</span> hover to explore
-      </motion.p>
+      ></motion.p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {skills.map((skill, i) => (
           <SkillCard key={skill.name} skill={skill} index={i} />
         ))}
