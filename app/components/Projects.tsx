@@ -47,7 +47,7 @@ const projects: Project[] = [
     tagline: "AI-powered workout form analysis",
     description:
       "A computer vision app that uses your camera to track workout movements in real time. Counts reps, estimates calories burned, and gives live feedback on your form using pose detection.",
-    logo: "/trueform-logo.png",
+    logo: "/trueform-logo1.png",
     link: "https://github.com/Zoakkz/TrueForm",
     linkLabel: "View on GitHub",
     linkIcon: FaGithub,
